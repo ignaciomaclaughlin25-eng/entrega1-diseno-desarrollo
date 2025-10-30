@@ -76,10 +76,42 @@ a{color:inherit;text-decoration:none}
   display:block;
   object-fit:contain;
 }
+/* ===== Promos (scoped) ===== */
+.promo-grid{
+  display:flex; gap:18px; flex-wrap:wrap; margin-top:10px;
+}
+.promo-card{
+  flex:1 1 260px; background:var(--bg-2);
+  border:1px solid #1a1a1a; border-radius:var(--radius);
+  padding:16px;
+}
+.promo-card h3{ margin:0 0 6px; font-weight:700; }
+.promo-qty{ display:flex; align-items:center; justify-content:space-between; margin-top:8px; }
+.promo-qty input{
+  width:90px; padding:8px; border-radius:10px; border:1px solid #3a3a3a; background:#111; color:var(--fg);
+}
+
+.promo-radio{ display:flex; gap:10px; align-items:center; margin:8px 0; }
+
+.promo-result{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:12px;
+  margin:16px 0 6px;
+}
+.promo-result > div{
+  background:#141414; border:1px solid #1a1a1a; border-radius:12px;
+  padding:14px; display:flex; flex-direction:column; gap:6px;
+}
+.promo-result span{ opacity:.8; font-size:.95rem; }
+.promo-result strong{ font-size:1.25rem; }
+
+@media (max-width:720px){
+  .promo-result{ grid-template-columns:1fr; }
+}
 
 
 
 
 
 }
+
 
